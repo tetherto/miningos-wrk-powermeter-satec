@@ -206,11 +206,11 @@ test('wrk: init sets init facs', (t) => {
   }
   const originalInit = WrkPowerMeterRack.prototype.init
   WrkPowerMeterRack.prototype.init = function () {
-    this.setInitFacs([['fac', 'svc-facs-modbus', '0', '0', {}, 0]])
+    this.setInitFacs([['fac', '@tetherto/svc-facs-modbus', '0', '0', {}, 0]])
   }
   wrk.init()
   WrkPowerMeterRack.prototype.init = originalInit
   t.ok(wrk.initFacs)
   t.is(wrk.initFacs.length, 1)
-  t.is(wrk.initFacs[0][1], 'svc-facs-modbus')
+  t.is(wrk.initFacs[0][1], '@tetherto/svc-facs-modbus')
 })

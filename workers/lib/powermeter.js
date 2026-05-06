@@ -1,8 +1,8 @@
 'use strict'
 
-const BasePowerMeter = require('miningos-tpl-wrk-powermeter/workers/lib/base')
+const BasePowerMeter = require('@tetherto/miningos-tpl-wrk-powermeter/workers/lib/base')
 const { series } = require('async')
-const { FUNCTION_CODES, PROTOCOL } = require('svc-facs-modbus/lib/constants')
+const { FUNCTION_CODES, PROTOCOL } = require('@tetherto/svc-facs-modbus/lib/constants')
 const { promiseTimeout } = require('@bitfinex/lib-js-util-promise')
 const {
   POWER_MULTIPLIER,

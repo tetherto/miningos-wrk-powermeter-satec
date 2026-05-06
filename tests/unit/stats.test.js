@@ -89,7 +89,7 @@ test('stats: powermeter_specific_stats_group filter returns false for missing st
 
 test('stats: powermeter_specific_stats_group filter handles offline entries', (t) => {
   const filter = libStats.specs.powermeter.ops.powermeter_specific_stats_group.filter
-  const libUtils = require('miningos-tpl-wrk-powermeter/workers/lib/utils')
+  const libUtils = require('@tetherto/miningos-tpl-wrk-powermeter/workers/lib/utils')
 
   const originalIsOffline = libUtils.isOffline
   libUtils.isOffline = () => true
@@ -110,7 +110,7 @@ test('stats: powermeter_specific_stats_group filter handles offline entries', (t
 
 test('stats: powermeter_specific_stats_group filter returns true for valid online entries', (t) => {
   const filter = libStats.specs.powermeter.ops.powermeter_specific_stats_group.filter
-  const libUtils = require('miningos-tpl-wrk-powermeter/workers/lib/utils')
+  const libUtils = require('@tetherto/miningos-tpl-wrk-powermeter/workers/lib/utils')
 
   const originalIsOffline = libUtils.isOffline
   libUtils.isOffline = () => false
