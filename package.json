@@ -14,20 +14,20 @@
   "homepage": "https://github.com/tetherto/miningos-wrk-powermeter-satec#readme",
   "bugs": {
     "url": "https://github.com/tetherto/miningos-wrk-powermeter-satec/issues"
-  },  
+  },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "files": [
     "worker.js",
     "workers/",
     "mock/"
   ],
-  "main": "worker.js",  
+  "main": "worker.js",
   "type": "commonjs",
   "bin": {
     "miningos-wrk-powermeter-satec": "worker.js"
-  },   
+  },
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
@@ -40,11 +40,11 @@
   "dependencies": {
     "@bitfinex/bfx-svc-boot-js": "1.2.0",
     "@bitfinex/lib-js-util-promise": "git+https://github.com/bitfinexcom/lib-js-util-promise.git",
-    "async": "3.2.6",
-    "debug": "4.4.1",
     "@tetherto/miningos-lib-stats": "git+https://github.com/tetherto/miningos-lib-stats.git",
     "@tetherto/miningos-tpl-wrk-powermeter": "git+https://github.com/tetherto/miningos-tpl-wrk-powermeter.git",
-    "@tetherto/svc-facs-modbus": "git+https://github.com/tetherto/svc-facs-modbus.git"
+    "@tetherto/svc-facs-modbus": "git+https://github.com/tetherto/svc-facs-modbus.git",
+    "async": "3.2.6",
+    "debug": "4.4.1"
   },
   "devDependencies": {
     "@tetherto/miningos-mock-control-service": "git+https://github.com/tetherto/miningos-mock-control-service.git",
